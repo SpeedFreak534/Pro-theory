@@ -11,6 +11,7 @@ public class Shape : MonoBehaviour
 
     private void OnMouseDown()
     {
+        //Abstraction
         DisplayText();
     }
 }

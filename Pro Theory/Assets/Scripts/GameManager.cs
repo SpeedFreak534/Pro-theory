@@ -6,7 +6,7 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
+    public static GameManager Instance { get; private set; } //Encapsulation
     public TextMeshProUGUI nameField;
     private TextMeshProUGUI mainNameField;
     private string playerName;
@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        //Abstraction
         UpdatePlayerName();
     }
 

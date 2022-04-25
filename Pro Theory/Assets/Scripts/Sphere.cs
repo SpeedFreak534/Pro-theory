@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sphere : Shape
+public class Sphere : Shape //Inheritance
 {
     private string shapeName;
 
@@ -13,6 +13,7 @@ public class Sphere : Shape
 
     public override void DisplayText()
     {
+        //Polymorphism
         Debug.Log(shapeName + " shape clicked!");
     }
 }
