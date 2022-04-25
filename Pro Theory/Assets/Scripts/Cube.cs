@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Cube : Shape
 {
-    // Start is called before the first frame update
-    void Start()
+    private string shapeName;
+
+    private void Start()
     {
-        
+        shapeName = "myCube";
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void DisplayText()
     {
-        
+        Debug.Log(shapeName + " shape clicked!");
     }
 }

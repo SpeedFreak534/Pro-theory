@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Shape : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public virtual void DisplayText()
     {
-        
+        Debug.Log("Random shape clicked!");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnMouseDown()
     {
-        
+        DisplayText();
     }
 }
